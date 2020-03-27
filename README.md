@@ -12,7 +12,7 @@ Here are the steps performed by the Robot:
 <ul><li>Append the resulting datatable into an Excel worksheet, you shouldn't worry about the headers and format of the output file.</ul></li>
 
 Constraints to follow in the development, using the REFrameWork:<br>
-<br>1.TransactionItem datatype should be a String. The process should recover and retry in case of errors in navigation between WorkItems page. One transaction is the action of scraping one web page. By navigating to the next page, the next transaction will execute. (Same as ACME Process 4 Dispatcher from the UiPath Academy). 
+<br>1. TransactionItem datatype should be a String. The process should recover and retry in case of errors in navigation between WorkItems page. One transaction is the action of scraping one web page. By navigating to the next page, the next transaction will execute. (Same as ACME Process 4 Dispatcher from the UiPath Academy). 
 <br>2. Create a separate workflow file for the Login to ACME. File input arguments: URL ; Username ; Password. Create a separate workflow file for closing ACME. 
 <br>3. Add the ACME_URL and ACME_Credential to the Config file. 
 <br>4. Populate InitAllApplications.xaml from the Framework folder with Invoking the Login to ACME and navigation to the Work Items. 
